@@ -1,0 +1,271 @@
+
+body {
+  background-color: #FFF;
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  color: #1B1B26;
+  display: block;
+
+}
+
+/* CONTAINER WITH MAX OVERALL WIDTH OF INTERIOR PAGE */
+.parent-container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0px;  
+}
+
+/* INTERIOR CONTAINER WITH MAIN ELEMENTS WITHIN THAT CENTRAL CONTAINER */
+.child-container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 6rem;
+}
+
+/* MAIN HEADER ELEMENTS */
+.header-main {
+    display: flex;
+    padding: 22px 8%;
+    align-items: center;
+    color: #eee;
+    border-bottom: 1px solid #7D1E28;
+    background: var(--RED, #DB324D);
+    box-shadow: 0px 4px 12px 1px rgba(63, 52, 52, 0.25);
+    margin-bottom: 4rem;
+}
+
+.logo-main {
+    height: 30px;
+}
+
+/* HEADER FORMATTINGS */
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+    
+}
+
+h2 {
+    font-size: 2.875rem;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 2rem;
+}
+
+/* FORMATTING FOR H2S WITH HIGHLIGHTS IN THE BG */
+
+.h2-block {
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-position-y: 2.5rem;
+}
+
+h3 {
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.375rem;
+    margin: 0px;
+
+}
+
+/* PARAGRAPHS FORMATTINGS */
+.lg-text {
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 3.89475rem;
+    margin: 0px;
+}
+
+.med-text {
+    font-size: 1.625rem;
+    font-weight: 100;
+    line-height: 2rem; 
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.3125rem;  
+}
+
+/* BUTTONS */
+.primary-button {
+    border-radius: 0.3125rem;
+    border: none;
+    background: #F3A63B;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem; 
+    color: #1E1E24;
+    font-size: 1.125rem;
+ }
+ 
+ .primary-button:hover {
+    background-color: #F0DCCA;
+ }
+ 
+ .primary-button:active {
+    background-color: #DB324D;
+ }
+ 
+ 
+ .primary-button:focus {
+   outline-color: #000;
+ }
+
+
+.secondary-button {
+
+}
+
+.tertiary-button {
+    color: #D9D9D9;
+    display: inline-flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #22222B;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+
+
+.tertiary-button:hover {
+    background-color: #F3A63B;
+    color: #22222B;
+
+ }
+ 
+ .tertiary-button:active {
+    background-color: #DB324D;
+ }
+ 
+ 
+ .tertiary-button:focus {
+   outline-color: #000;
+ }
+
+/* MAIN CONTAINER FORMATTING FOR TOP INTRO IMAGERY */
+.hero-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 0px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.table-style {
+    height: auto;    
+    border-bottom: 81px solid #806A6A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coding-scene {
+    align-items: center;
+    transform: translateY(61px)
+}
+
+.profile {
+    width: 100%;
+}
+
+
+/* INDIVIDUAL ABOUT ME TILES */
+
+.aboutMe-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.1875rem;
+    align-self: stretch;
+    padding-top: 2rem;
+}
+
+.aboutme-tile {
+    display: flex;
+    padding: 1.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex: 1 0 0;
+    border-radius: 1.5625rem;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(52, 52, 63, 0.10);
+    background: var(--XA, #FFF);
+}
+
+.footer-container {
+    color: #D9D9D9;
+    border-top: 1px solid #1B1B26;
+    background: #22222B;
+    box-shadow: 0px -4px 22px 0px rgba(0, 0, 0, 0.25);
+    padding: 60px 0;
+    margin-top: 60px;
+}
+
+.footer-container-top {
+    display: flex;
+    gap: .5rem;
+
+}
+
+.socials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-auto-rows: max-content;
+}
+
+@media (max-width: 28.125rem)
+{
+    
+    .child-container {
+        padding: 0 2rem;
+    }
+    
+    
+    /* HEADER FORMATTINGS */
+    h1
+    {
+        font-size: 1.875rem;
+    }
+
+    h2
+    {
+        font-size: 1.75rem;
+    }
+
+    /* PARAGRAPHS FORMATTINGS */
+    .lg-text {
+        font-size: 1.125rem;
+        line-height: 1.94738rem;
+
+    }
+
+    
+    p {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    
+        
+    }
+
+    .socials-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
