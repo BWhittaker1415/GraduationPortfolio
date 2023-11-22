@@ -1,0 +1,154 @@
+
+
+.projectHeader {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 5rem 0;
+    margin: -4rem 0 0 0;
+    color: #DBDBDB;
+}
+
+.projectBage-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.badge-Glow {
+    box-shadow: 0px 0px 2px 0px #DBDBDB;
+    border-radius: 3px;
+}
+
+.info-Blocked {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.block-75 {
+    width: 75%;
+}
+
+.block-65 {
+    width: 65%;
+}
+
+.block-50 {
+    width: 50%;
+}
+
+.block-45 {
+    width: 45%;
+}
+
+.block-25 {
+    width: 25%;
+}
+
+.responsive-Images {
+    width: -webkit-fill-available;
+    border-radius: 1.5625rem;
+}
+
+.colors-Block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+.color-Size {
+    width: 7rem;
+}
+
+.computer {
+    width: 40rem;
+}
+
+/* SLIDE SHOW CSS */
+
+.image-slideshow {
+/*  max-width: 800px;  */
+  position: relative;
+/*  margin: auto;    */
+}
+
+.fade {
+  animation-name: none;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+/* https://www.educative.io/answers/how-to-create-an-automatic-slideshow-with-html-css-and-js */
+/* END SLIDESHOW */
+
+
+/* PICTURES AS A OVERLAY */
+
+/* Style the Image Used to Trigger the Modal */
+.interractive-Image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.interractive-Image:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 950px;
+}
+.modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+#image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
