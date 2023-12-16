@@ -154,11 +154,13 @@ p {
     background-color: #22222B;
     border-radius: 0.3125rem;
     border: none;
+    transition: .3s;
 }
 
 .tertiary-button:hover {
     background-color: #F3A63B;
     color: #22222B;
+    transform: scale(1.2);
 }
 
 .tertiary-button:active {
@@ -182,6 +184,7 @@ p {
 
 .table-style {
     height: auto;
+    width: 100%;
     border-bottom: 81px solid #806A6A;
     display: flex;
     flex-direction: column;
@@ -302,18 +305,15 @@ p {
 
 
 /* MEDIA QUERY AREAS */
-@media (max-width: 58.125rem) {
+@media (max-width: 1200px) {
     .aboutMe-block {
-        flex-flow: wrap;
         gap: 2rem;
     }
 
     .aboutme-tile {
         min-width: 10rem;
     }
-}
-
-@media (max-width: 54.375rem) {
+ 
     .footer-container-top {
         gap: 1rem;
         flex-direction: column;
@@ -322,10 +322,10 @@ p {
     .socials-container {
         display: flex;
         flex-direction: column;
-        width: fit-content;
+        width: 100%;
     }
 
-    @media (max-width: 53.125rem) {
+    @media (max-width: 1000px) {
         .skills-tile {
             flex-direction: column;
         }
@@ -344,7 +344,7 @@ p {
         }
     }
 
-    @media (max-width: 40rem) {
+    @media (max-width: 600px) {
 
         .child-container {
             padding: 0 1.75rem;
@@ -445,3 +445,4 @@ p {
             width: 100%;
         }
     }
+}
