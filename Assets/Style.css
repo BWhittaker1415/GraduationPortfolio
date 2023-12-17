@@ -277,6 +277,23 @@ p {
     width: 75%;
 }
 
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.projectImg {
+    width: 100%;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.projectImg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .footer-container {
     color: #D9D9D9;
     border-top: 1px solid #1B1B26;
@@ -324,8 +341,9 @@ p {
         flex-direction: column;
         width: 100%;
     }
+}
 
-    @media (max-width: 1000px) {
+@media (max-width: 1000px) {
         .skills-tile {
             flex-direction: column;
         }
@@ -344,12 +362,25 @@ p {
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 850px) {
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    }
+
+    @media (max-width: 500px) {
 
         .child-container {
             padding: 0 1.75rem;
         }
 
+        .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
 
         /* HEADER FORMATTINGS */
         h1 {
@@ -445,4 +476,3 @@ p {
             width: 100%;
         }
     }
-}
