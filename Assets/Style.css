@@ -206,6 +206,7 @@ p {
 .aboutMe-block {
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
     gap: 3.1875rem;
     align-self: stretch;
 }
@@ -362,7 +363,7 @@ p {
         }
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 800px) {
         .project-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
