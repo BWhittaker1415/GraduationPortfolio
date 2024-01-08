@@ -160,7 +160,7 @@ p {
 .tertiary-button:hover {
     background-color: #F3A63B;
     color: #22222B;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .tertiary-button:active {
