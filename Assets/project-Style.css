@@ -4,13 +4,38 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    padding: 5rem 0;
-    margin: -4rem 0 0 0;
+    padding: 2rem 0;
+    margin: -4rem auto auto auto;
+   
+
+}
+
+.HeaderInfo {
+    align-items: center;
+    text-align: center;
+    max-width: 55rem;
+    border-radius: 1.5625rem;
+    padding: 3.125rem;
+    margin: auto;
+
+
+}
+
+.HeaderDark{
     color: #DBDBDB;
+border: 3px solid var(--DARK, #1E1E24);
+background: rgba(30, 30, 36, 0.50);
+}
+
+.HeaderLight {
+    color: #333;
+    border: 3px solid #DBDBDB;
+    background: rgba(219, 219, 219, 0.50);
+
 }
 
 .projectBage-Container {
-    display: flex;
+    display: flow;
     flex-direction: row;
     gap: 1rem;
 }
@@ -49,7 +74,7 @@
 
 .responsive-Images {
     width: -webkit-fill-available;
-    border-radius: 1.5625rem;
+        border-radius: 1.5625rem;
 }
 
 .colors-Block {
