@@ -285,6 +285,17 @@ p {
     width: 75%;
 }
 
+.project-container {
+    display: flex;
+    align-items: center;
+}
+
+.projectImg {
+    width: 17rem;
+    margin: 0 30px 30px 0;
+    border-radius: 10px;
+}
+
 .footer-container {
     color: #D9D9D9;
     border-top: 1px solid #1B1B26;
@@ -456,3 +467,4 @@ p {
             width: 100%;
         }
     }
+}
