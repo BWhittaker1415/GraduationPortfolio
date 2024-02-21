@@ -152,6 +152,7 @@ p {
 
 .secondary-button:hover {
     background: #F3A63B;
+    cursor: pointer;
 }
 
 .tertiary-button {
